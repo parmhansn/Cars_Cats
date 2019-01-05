@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cuddles</title>
+    <style>
+        .oval {
+            height: 300px;
+            width: 435px;
+            background-color: #555;
+            border-radius: 50%;
+            }
+        .food{
+            background-color: pink;
+            height: 52px;
+            width: 50%;
+            margin-left: 10px;
+        }
+        .age{
+            background-color: pink;
+            height: 52px;
+            width: 50%;
+            margin-left: 10px;
+        }
+        .sleep{
+            background-color: pink;
+            height: 52px;
+            width: 50%;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <img class="oval" src="/images/cat1.jpg">
+    <% for (var i=0; i < cuddles.length; i++) { %>
+        <h3 class='food'>Favorite Food: <%= cuddles[i].fave_food  %> </h3>
+        <h3 class='age'>Age: <%= cuddles[i].age  %> </h3>
+        <h3 class=sleep>Sleeping Spots: <%= cuddles[i].sleeping  %> </h3>
+    <% } %>
+    
+</body>
+</html>
